@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy New Year</title>
+
+    <link rel="shortcut icon" href="https://www.pinclipart.com/picdir/big/47-478843_new-year-horn-png-konfetti-icon-clipart.png">
+
+    <meta property="og:image" content="https://lh3.googleusercontent.com/proxy/MYtPPc2Z928b2l1t9I_MAEM3jY6etAnpWNCfETd4RcxJo3CSXKA9VN2OfUatZ9-H4Mi1wwC-QtuSHwrWkJhqFa-ACMiTdJjuueynn6t-fGxBPzP4Z3qL66SvQmbsRn_ZhKiFRAU9HuOPaDFk2kDJHJ5c5FClZVnOF_kwPhK33M-dq9pKFGXaNYLdjdU4H8VeKyI">
+    <meta property="og:title" content="Happy New Year!">
+    <meta property="og:description" content="2021을 위하여">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Pacifico&family=Permanent+Marker&family=Single+Day&family=Stylish&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Bangers', cursive;
+            font-family: 'Pacifico', cursive;
+            font-family: 'Permanent Marker', cursive;
+            font-family: 'Single Day', cursive;
+            font-family: 'Stylish', sans-serif;        }
+
+        body {
+            background-color:midnightblue;
+        }
+
+        .envelope {
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://cdn0.iconfinder.com/data/icons/love-story-filled-outline-1/512/love_heart_valentine_letter_day_card_romantic_decoration_mail-512.png');
+            background-position: center;
+            background-size: cover;
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: floralwhite;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open{
+            display: none;
+        }
+
+        .character {
+ 
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://media0.giphy.com/media/dJtnMymT9imSH9D142/giphy.gif');
+            background-size: cover;
+            background-position: center;
+
+            margin: 100px auto 0px auto;
+
+            border-radius: 100px;
+            border: 5px solid rgb(255, 200, 0);
+            box-shadow: 0px 0px 10px 0px rgb(255, 200, 0);
+        }
+
+        h3 {
+            color:rgb(255, 200, 0) ;
+            text-align: center;
+            margin-top: 40px;
+            font-size: 30px;
+
+        }
+
+        .msg-box {
+            background-color: rgb(248, 248, 248);
+            width: 600px;
+
+            margin: auto;
+            color: rgb(16, 16, 17);
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px rgb(1, 1, 23);
+            text-align: center;
+
+        }
+
+        .from {
+            text-align: center;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msg-box {
+                width: 300px;
+                padding: 20px;
+
+            }
+
+            .character {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+
+            }
+
+            h3{
+                font-size: 26px;
+            }
+          
+        }
+    </style>
+
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+
+        function go_character() {
+            alert('It is right here')
+            window.location.href='https://apps.apple.com/app/id1483410865'
+        }
+    </script>
+</head>
+
+
+
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h1 class="envelope-msg">Season's Greetings!</h1>
+    </div>
+
+    <div class="letter-open">
+        <div class="character" onclick="go_character()"> </div>
+        <h3>Wishing you a happy,<br /> healthy New Year. </h3>
+        <div class="msg-box">
+            안녕,안녕! <br />
+            새해에는 (제발) 코로나 19에서 벗어나 <br />
+            밝고 건강한 2021년이 되기를 바라면서.. <br />
+            Happy New Year! <br />
+            <p class="from">
+                2020.12.31. 지연
+            </p>
+        </div>
+
+    </div>
+
+
+
+    
+</body>
+
+</html>
